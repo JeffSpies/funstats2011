@@ -1,0 +1,141 @@
+\documentclass[11pt]{article} 
+
+\usepackage{graphicx}
+\usepackage{fancyheadings}
+
+\usepackage{apacite}
+
+\usepackage{geometry}
+\geometry{width=6.5in,height=9.875in,left=1in, top=0.45in}
+
+\newlength{\figurewidth} 
+\figurewidth \textwidth  
+
+\setlength{\unitlength}{1in}
+\newcounter{tablecount}
+\newcounter{figurecount}
+\usepackage{hyperref}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+\begin{center}
+{\LARGE \bf Psyc 7765-001 \\ 
+Fundamentals of Statistical Computing\\for Behavioral and Social Scientists} \bigskip \\
+{\Large \bf Course Syllabus} \\
+\end{center}
+\bigskip
+
+
+{\parindent 0pt
+\begin{tabular}{ r l  } 
+{\bf Meeting Time:} & Fridays, 2:00-3:15 PM \\
+{\bf Room:}         & Gilmer 166\\
+                    & \\
+{\bf Instructor:}   & Jeffrey R. Spies \\
+{\bf Office:}       & Millmont 210 \\
+{\bf Office Hours:} & TBA or by appointment \\
+{\bf Email:}        & {\tt jspies@virginia.edu}  \\
+{\bf Course Web Page:}     & \url{http://people.virginia.edu/~js6ew/#7765} \\
+\end{tabular} \medskip \\
+}
+
+\section{Summary}
+
+This course will provide students with a basic understanding of statistical computing and programming using the R language.  Students will learn methods of integrating the computational skills they acquire into a workflow making the process from analysis to publication more efficient with examples emphasizing areas where R has specific advantages over packages like Excel, SPSS, and SAS.  These topics will include data management and cleaning, task automation, and visualizations.
+
+\section{Background}
+
+R is a free, community-developed, open-source programming language and statistical environment. Because of its unparalleled flexibility, it is the software used to demonstrate analyses in every statistics course currently taught in the Department of Psychology at the University of Virginia, including the yearlong introductory statistics sequence required for all graduate students. UVA is one of many academic institutions following a trend in the behavioral and social sciences to adopt R as the primary software for data analyses taught to incoming students as it is widely used both across academia and industry.
+
+It is often the case that the questions researchers seek to ask are limited by the capabilities of the statistical software they use.  However, because R is also a programming language, users can both perform common analyses or develop more advanced methods that suit their purposes using the same platform.  This is a task becoming increasingly common as psychology progresses as a science and researchers ask more complicated, computationally intensive questions of their data.
+
+In order to offer the flexibility required to not inhibit research, R tends to come with a learning curve for those without programming experience.  When a person learns R, even at the most basic level, they are essentially learning how to program because that is the method the user interacts with the system rather than point-and-click menus, like Microsoft Excel.  To take full advantage of the flexibility that comes with a programming language, a user must learn not only the software tool itself, but the concepts that accompany programming in general.  For many psychologists, this is a daunting task as most undergraduate psychology programs do not include programming or computational courses.  
+
+\section{Focus}
+
+The goal of this course is to provide students with a more basic understanding of the computational properties of R as a programming language.  While R has many intrinsic benefits that point to a long future (e.g. free, community-developed, open-source, easily extendable), computational techniques will be taught in such a way that generalize to other programming languages. The emphasis will not be on the syntax used to accomplish particular analyses or the statistics involved in those analyses, but instead on the concepts and functionality that the language allows one to specify.  Examples making use of these computational techniques will be relevant to the behavioral and social scientist and provide them with a base of knowledge that could be applied to their own research.  These examples will include data cleaning and management, automating analyses, visualization generation, and integrating R into a workflow making the research process more efficient.
+
+\section{Prerequisites}
+
+It is recommended that students have taken or are currently enrolled in an introductory statistics course.  No programming experience is required.
+
+Students should bring laptops to each class in order to follow along with the in-class presentation and take part in exercises.  R should be installed on their system.  Information for downloading and installing R can be found at: \url{http://people.virginia.edu/~js6ew/#7765}.
+
+\section{Student Evaluation}
+
+Evaluation and course grades will be based on attendance and completion of weekly assignments (3-4 hours per week outside of class); both are required.  Regarding attendance, only University-accepted excuses for being absent will be allowed, and the instructor should be notified before being absent or, in the event of an emergency, as soon as possible.  When allowed, students can work with the instructor to make up missed classes.
+
+\section{Textbooks and Handouts}
+
+TBA
+
+\pagebreak
+
+\section{Timeline}
+\begin{center}
+\begin{large}
+\begin{tabular}{|c|l|c|c|} \hline
+& Date & Description & Assignment \\  \hline\hline
+  & 08/23 & SEMESTER BEGINS &  \\  \hline
+ 1& 08/26 & \parbox[t]{75mm} {  Intro to programming: Data types (numeric, string, logical), primitive expressions, functions, documentation \smallskip}
+          & \parbox[t]{55mm} {  TBA\smallskip}\\  
+          \hline
+ 2& 09/02 & \parbox[t]{75mm} {  More on functions and documentation\\
+ 		  			            Intro to collection data types (vectors, lists)\\
+ 		  			            Basic importing of data into R\\
+ 		  			            R workflow style and tips\smallskip}
+ 		  & \parbox[t]{55mm} {  TBA\smallskip}\\  
+ 		  \hline
+ 3& 09/09 & \parbox[t]{75mm} {  Data relevant data types (1): data frame, factors, representing missingness\\
+		  			            Example: linear regression\smallskip}
+		  & \parbox[t]{55mm} {  TBA\smallskip}\\  
+		  \hline
+ 4& 09/16 & \parbox[t]{75mm} {  Data relevant data types (2): tables\smallskip} 
+          & \parbox[t]{55mm} {  TBA\smallskip}\\
+          \hline
+ 5& 09/23 & \parbox[t]{75mm} {  Logical expressions and selection vectors(1)\smallskip}
+          & \parbox[t]{55mm} {  TBA\smallskip}\\
+          \hline
+ 6& 09/30 & \parbox[t]{75mm} {  Selection vectors (2)\smallskip
+ 		  			            Example: dataset\smallskip}
+ 		  & \parbox[t]{55mm} {  TBA\smallskip}\\
+ 		  \hline 
+ 7& 10/07 & \parbox[t]{75mm} {  Writing functions - advanced\smallskip}
+          & \parbox[t]{55mm} {  TBA\smallskip}\\
+          \hline
+ 8& 10/14 & \parbox[t]{75mm} {  Apply functions and intro to Plyr\smallskip}
+          & \parbox[t]{55mm} {  TBA\smallskip}\\
+          \hline
+ 9& 10/21 & \parbox[t]{75mm} {  Apply functions\\
+                                Example: data aggregation\smallskip}
+          & \parbox[t]{55mm} {  TBA\smallskip}\\
+          \hline
+ 0& 10/28 & \parbox[t]{75mm} {  Loops and their relation to apply functions\smallskip}
+          & \parbox[t]{55mm} {  TBA\smallskip}\\
+          \hline
+ 1& 11/04 & \parbox[t]{75mm} {  Nested loops\smallskip}
+          & \parbox[t]{55mm} {  TBA\smallskip}\\
+          \hline
+ 2& 11/11 & \parbox[t]{75mm} {  Advanced data management in R\smallskip}
+          & \parbox[t]{55mm} {  TBA\smallskip}\\
+          \hline
+ 3& 11/18 & \parbox[t]{75mm} {  Programming visualizations using the Lattice library\\
+                                Example: xyplot\smallskip}
+		  & \parbox[t]{55mm} {  TBA\smallskip}\\
+   	  	  \hline
+ 4& 11/25 & \parbox[t]{75mm} {  Advanced workflow\smallskip}
+          & \parbox[t]{55mm} {  TBA\smallskip}\\
+          \hline
+ 4& 12/02 & \parbox[t]{75mm} {  TBA\smallskip}
+          & \parbox[t]{55mm} {  TBA\smallskip}\\
+  & 12/06 & Courses end
+          & \\  
+          \hline
+\end{tabular}
+\end{large}
+\end{center}
+
+\end{document}
