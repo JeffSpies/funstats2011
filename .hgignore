@@ -1,0 +1,8 @@
+syntax: glob
+.DS_Store
+*~
+*aux
+*log
+*out
+*gz
+*.pyc
