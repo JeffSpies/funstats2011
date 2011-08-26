@@ -5,3 +5,8 @@
 .*\.out
 .*\.gz
 .*\.pyc
+.*\.pdfsync
+.*\.snm
+.*\.toc
+.*\.nav
+.*\.nohg\.*
