@@ -11,7 +11,7 @@
 
 # Class (on arriving):
 #   Sit in pairs
-#   Visit http://bitbucket.org/jspies/funstats2011/
+#   Visit http://people.virginia.edu/~js6ew/#7765
 #   Download today's lesson
 #   Fill out attendance form
 
@@ -131,6 +131,10 @@ myVariableName
 my variable name <- 3
 
 "my variable name" <- 3
+
+"my variable name"
+
+`my variable name`
 
 # Variable names can contain
 # - Letters
