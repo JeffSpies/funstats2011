@@ -182,7 +182,8 @@ length(myVector[myVector > mean(myVector)])
 # your overall quality of life during the past week?" Scores range from 0
 # (Very good, my life could hardly be better) to 4 (Very bad, my life could
 # hardly be worse) with a midpoint of 2 (The good and bad parts are about 
-# equal).
+# equal). Citation: Zimmerman, Ruggero, Chelminski, Young, Posternak, 
+# Friedman, et al. 2006
 
 gqol <- c(4,3,4,0,2,2,1,2)
 
