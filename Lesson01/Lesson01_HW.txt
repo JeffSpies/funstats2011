@@ -1,0 +1,20 @@
+1) Practice downloading linked files from the course website, under "Couses" of my homepage:
+
+http://people.virginia.edu/~js6ew/
+
+Instead of using the version control site (bitbucket), the content on my webpage will update dynamically based on the stuff at bitbucket, but you'll never be able to tell the difference making it should be a bit more straightforward.
+
+2) Create a directory structure somewhere on your computer that you can easily navigate to where you will be saving course content that looks something like the following:
+
+FunStats/
+-- Lesson01/
+-- -- Lesson01.R
+-- Lesson02/
+...
+etc
+
+3) If you didn't fill out the survey, do so now:
+
+http://goo.gl/PjLvl
+
+If any of these tasks don't make sense, email me ASAP.  Sometimes this stuff can be tricky due to browser/operating system differences, but knowing this well will allow us to get started on the lesson sooner during class. No need to email me anything this week if you're not having problems.
