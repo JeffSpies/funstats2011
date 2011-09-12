@@ -165,7 +165,7 @@ c(2,8,15,3,9,9,4,3,9,6)
 
 # What is one way that I can get this vector using a list like `myList` and 
 # the dollar notation? Assume the list has name attributes, x and y. Remember:
-# I can combine vectors using `c`.  What are x and y?
+# I can combine vectors using `c`.  Consider what x and y are in myList.
 
 psyc7765.3.1 <- function(x){
     answer <- NA # replace
