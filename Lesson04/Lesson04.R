@@ -89,3 +89,47 @@ Petal.Length
 
 Sepal.Length
 
+###############################################################################
+# Reading in data: the arguments
+###############################################################################
+
+tc1 <- textConnection(
+'var1 var2 var3 var4
+ 5 NA 2 3
+10 3 5 8
+')
+
+(dat_1 <- read.table(tc1))
+
+close(tc1)
+
+tc2 <- textConnection(
+'var1 var2 var3 var4
+ 5 NA 2 3
+10 3 5 8
+')
+
+(dat_1 <- read.table(tc2))
+
+close(tc2)
+
+tc3 <- textConnection(
+'v1, v2, v3,v4
+ 5,      , 2, 3
+10,     3, 5, 8
+')
+
+(dat_1 <- read.table(tc3))
+
+close(tc3)
+
+tc4 <- textConnection(
+'--my data file--
+ # some comments
+ 5 8 2 3
+10 3 5 8
+')
+
+(dat_1 <- read.table(tc4))
+
+close(tc4)
