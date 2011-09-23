@@ -14,7 +14,7 @@ rm(list=ls())
 ###############################################################################
 
 #setwd('~/Projects/funstats2011/Lesson05/')
-# setwd('C:/Documents and Settings/Jeffrey Spies/My Documents/7765/Lesson03/')
+# setwd('C:/Documents and Settings/Jeffrey Spies/My Documents/7765/Lesson05/')
 getwd()
 
 ###############################################################################
