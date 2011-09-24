@@ -25,9 +25,20 @@ psyc7765.id <- 'Type your computing id here' # (e.g. 'js6ew')
 # Background
 ###############################################################################
 
-# Download 2006.sav and gss_codebook_2006.txt from the course website
+# Download 2006.sav and gss_codebook_2006.txt from the course website.
 
-# setwd('/your/path') # Set your working directory
+setwd('/your/path') # Set your working directory appropriately.
+
+# We will be using data from the 2006 wave of the General Social Survey (GSS).
+# You can find infomration about it at http://www3.norc.org/GSS+Website/
+# but the following is a description from that site:
+
+# The GSS contains a standard 'core' of demographic, behavioral, and attitudinal
+# questions, plus topics of special interest. Many of the core questions have 
+# remained unchanged since 1972 to facilitate time-trend studies as well as 
+# replication of earlier findings. The GSS takes the pulse of America, and is 
+# a unique and valuable resource. It has tracked the opinions of Americans
+# over the last four decades.
 
 require(foreign)
 dat <- read.spss('2006.sav', to.data.frame=T)
