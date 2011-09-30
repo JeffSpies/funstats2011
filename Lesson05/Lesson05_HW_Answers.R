@@ -264,6 +264,9 @@ with(dat[!sel_IsFemale,], per.table(table(scistudy, evolved), margin=1)) # or da
 your code
 
 # Your description
+     
+with(dat[dat$sex!="FEMALE",], per.table(table(polviews, fepol), margin=1))
+with(dat[dat$sex=="FEMALE",], per.table(table(polviews, fepol), margin=1))
 
 ###############################################################################
 # Problem 2.5
@@ -271,9 +274,11 @@ your code
 # sexual partners (partners)?
 ###############################################################################
 
-with(dat[dat$age < 30 & dat$age > 20,], per.table(table(partners, hivtest), margin=1))
+your code
 
 # Your description
+
+with(dat[dat$age < 30 & dat$age >= 20,], per.table(table(partners, hivtest),1))
 
 ###############################################################################
 # Problem 2.6
@@ -287,6 +292,12 @@ your code
 
 # Your description
 
+sel_Liberal <- with(dat, polviews=='EXTREMELY LIBERAL' | polviews=='LIBERAL' | polviews=='SLIGHTLY LIBERAL')
+sel_Conservative <- with(dat, polviews=='EXTREMELY CONSERVATIVE' | polviews=='CONSERVATIVE' | polviews=='SLIGHTLY CONSERVATIVE')
+
+with(dat[sel_Liberal,], per.table(table(degree, marhomo), 1))
+with(dat[sel_Conservative,], per.table(table(degree, marhomo),1))
+
 ###############################################################################
 # Problem 2.7
 # Do full-time working (partfull) moms (childs) tend to be happier (happy) when 
@@ -297,6 +308,10 @@ your code
 
 # Your description     
 
+with(dat[dat$sex == 'FEMALE' & dat$childs > 0 & dat$partfull == "FULL-TIME",],
+     per.table(table(marital, happy), 1)
+)
+
 ###############################################################################
 # Problem 2.8
 # Create a table using `rbind` of the mean respondent income (realinc) by views 
@@ -304,7 +319,15 @@ your code
 # and (c) taxes on the rich (taxrich).
 ###############################################################################
 
-your code
+your code     
+     
+taxTable <- with(dat, rbind(
+    tapply(realrinc, taxpoor, mean, na.rm=TRUE),
+    tapply(realrinc, taxmid, mean, na.rm=TRUE),
+    tapply(realrinc, taxrich, mean, na.rm=TRUE)
+))
+row.names(taxTable) <- c("Poor","Middle Class","Wealthy")
+taxTable     
      
 ###############################################################################
 # Problem 2.9
@@ -318,6 +341,13 @@ your code
 your code
 
 # Your description
+
+hasSameRelig <- with(dat, relig==sprel)
+
+with(dat, per.table(table(happy, hasSameRelig), margin=2))
+with(dat, per.table(table(hapmar, hasSameRelig), margin=2))
+with(dat, per.table(table(sexfreq, hasSameRelig), margin=2))
+with(dat, per.table(table(life, hasSameRelig), margin=2))
 
 ###############################################################################
 # Problem 3: Come up with two (or more) questions that you find interesting or 
