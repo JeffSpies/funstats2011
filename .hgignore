@@ -10,3 +10,7 @@
 .*\.toc
 .*\.nav
 .*\.nohg\.*
+\.Rapp\.history
+HW/.*
+.*\.mov
+.*InClass.R
