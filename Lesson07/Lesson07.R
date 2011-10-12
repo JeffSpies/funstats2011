@@ -16,10 +16,6 @@ str(dat_raw)
 
 dat <- within(dat_raw, {
      SpeciesF <- as.factor(Species)
-     
-     levels(SpeciesF) <- c('setosa', 'versicolor', 'virginica') 
-     # ^ if I'm not sure all my levels are represented
-     
      SpeciesF <- relevel(SpeciesF, 'versicolor')
 })
 
@@ -118,7 +114,7 @@ fnAddRowByIndex <- function(){
      df[nrow(df)+1,] <- c(101, 301)
 }
 
-benchmark(fnAddRowRbind, fnAddRowIndex, n=100)
+benchmark(fnAddRowByRbind, fnAddRowByIndex, n=100)
 
 # Is the nrow() function slowing us down?  Let's try the following:
 
@@ -126,3 +122,5 @@ fnAddRowByIndexKnown <- function(){
      df <- data.frame(x=1:100, y=201:300)
      df[101,] <- c(101, 301)
 }
+
+# Test this function with benchmark

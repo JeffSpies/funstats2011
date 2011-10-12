@@ -40,10 +40,6 @@ str(dat_raw)
 
 dat <- within(dat_raw, {
      SpeciesF <- as.factor("Species")
-     
-     levels(SpeciesF) <- c('setosa', 'versicolor', 'virginica') 
-     # ^ if I'm not sure all my levels are represented
-     
      SpeciesF <- relevel(SpeciesF, 'versicolor')
 })
 
