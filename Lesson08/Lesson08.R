@@ -188,21 +188,6 @@ ddply(iris, c('Species'), transform, SLCentered=scale(Sepal.Length, scale=F), SW
 #   list        | laply |      ldply | llply |     l_lpy
 
 ###############################################################################
-# apply, lapply, sapply
-###############################################################################
-
-# What is this?
-apply(iris[,1:4], 2, mean, na.rm=T)
-
-# How about this?
-apply(iris[,1:4], 1, mean, na.rm=T)
-
-# And this? What type of data is this?
-apply(iris[,1:4], c(1,2), mean, na.rm=T)
-
-# How about lapply? sapply?
-
-###############################################################################
 # And for fun....
 ###############################################################################
 
