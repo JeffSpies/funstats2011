@@ -111,7 +111,7 @@ psyc7765.4.minutes <- NA
 ###############################################################################
 
 # In the very last section of Lesson08.R, you have code to plot the percentage 
-# of the population that has a given name over time for all of our first names.
+# of the population that has a given name over time for most of our first names.
 # As you can tell by the trends, it seems that once a name gets to a certain 
 # level of popularity, it begins decreasing.  And some names aren't popular 
 # enough to make the top 1000 until certain points in history, while others 
