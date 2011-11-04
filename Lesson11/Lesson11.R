@@ -1,47 +1,14 @@
 ###############################################################################
-# Title: PSYC 7765 - Lesson 10
+# Title: PSYC 7765 - Lesson 11
 # Author: Jeffrey R. Spies (jspies@virginia.edu)
 # History: date()
-#   Fri Oct 27 18:34:11 2011 - Created the file - JRS
+#   Fri Nov  4 12:52:03 EDT 2011 - Created the file - JRS
 ###############################################################################
 
 rm(list=ls()) 
 #setwd("~/Projects/funstats2011/Lesson10")
 require(plyr)
 require(ggplot2)
-
-###############################################################################
-# Example courtesy of Caitlin
-###############################################################################
-
-dat <- data.frame(
-  subject=1:100,
-  averagestudentscore.pre=rnorm(100), averagestudentscore.mid=rnorm(100), 
-  averagestudentscore.post=rnorm(100),class.size=rnorm(100), years.experience=rnorm(100),
-  class=c('RegularEd', 'Inclusion'), stringsAsFactors=F)
-
-# differencescore.pre.mid
-# differencescore.mid.post
-# differencescore.pre.post
-
-dat_with_difference.scores <- FILL IN
-
-qplot(subject, differencescore.pre.post, geom="line", colour=class, data=dat_with_difference.scores)
-
-###############################################################################
-# apply, lapply, sapply
-###############################################################################
-
-# What is this?
-apply(iris[,1:4], 2, mean, na.rm=T)
-
-# How about this?
-apply(iris[,1:4], 1, mean, na.rm=T)
-
-# And this? What type of data is this?
-apply(iris[,1:4], c(1,2), mean, na.rm=T)
-
-# How about lapply? sapply?
 
 ###############################################################################
 # Proprotion Correct
@@ -120,3 +87,19 @@ transDf(isHappy, c('happy', 'sad'))
 aborc <- c('a', 'a', 'a', 'b', 'c')
 
 transDf(aborc, c('a', 'b', 'c'))
+
+#########################################################################################
+#  Merging datasets
+#########################################################################################
+
+df <- data.frame(
+    Subject=rep(1:5, each=3), 
+    Gender=rep(sample(c('M', 'F'), 5, replace=T), each=3),
+    Time=1:3, 
+    Depression=rnorm(15), 
+    Anxiety=rnorm(15)
+)
+
+df.age <- data.frame(id=1:5, Age=runif(5, 20, 30))
+
+merge(df, df.age, by.x="Subject", by.y="id")
