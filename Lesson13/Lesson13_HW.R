@@ -5,7 +5,14 @@
 #   Tue Nov 29 01:18:32 2011 - Created the file - JRS
 ###############################################################################
 
-# Go through the last part of Lesson 13 (conditionals)
+# Instructions:
+# Go through the last part of Lesson 13 (conditionals). Download subject[1-3].csv.
+# Place them in your working directory as set below.  Fill in comments for every
+# line ending with a FILL IN comment explaining what it does and why it's doing it. 
+# You can enter a new lines/comments below each line to write more information.
+# Pretend like you're writing this for someone who wants to easily read your code
+# or for yourself in a few years.  Also fill in code or explainations in places
+# that say FILL IN.  Enjoy!
 
 rm(list=ls())
 
