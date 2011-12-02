@@ -1,5 +1,6 @@
 ###############################################################################
 # Title: PSYC 7765 - Lesson 14 - Helper functions
+# Description: A few things I use all the time
 # Author: Jeffrey R. Spies (jspies@virginia.edu)
 # History: date()
 #   Fri Dec  2 12:08:10 2011 - Created file - JRS

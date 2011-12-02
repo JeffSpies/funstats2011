@@ -59,7 +59,7 @@ dat_cov_raw <- read.csv(paste('Data', 'SubjectInfo.csv', sep="/"), stringsAsFact
 
 dat_cov_clean <- within(dat_cov_raw,{                                   
      raceRecoded <- recode(raceeth, 
-          "1='White';2='Black';3='HispLat';4='Asian';5='PacIsl';6='Other';'-'=NA"
+          # FILL IN
      )
      raceRecodedF <- factor(raceRecoded, 
           levels=c('White', 'Black', 'HispLat', 'Asian', 'PacIsle', 'Other')

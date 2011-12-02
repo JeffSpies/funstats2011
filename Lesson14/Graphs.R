@@ -1,5 +1,6 @@
 ###############################################################################
 # Title: PSYC 7765 - Lesson 14 - Graphs
+# Description: Graphs for such and such presentation
 # Author: Jeffrey R. Spies (jspies@virginia.edu)
 # History: date()
 #   Tue Nov 29 01:18:32 2011 - Created the file - JRS
